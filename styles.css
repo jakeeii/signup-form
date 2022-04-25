@@ -45,11 +45,65 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Baloo Da 2', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description,
+.cta {
+  margin: 0 200px 0px 20px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 110%;
+}
+
+.description {
+  margin-top: 50px;
+}
+
+.cta {
+  margin-bottom: 15px;
 }
 
 form {
-  margin: 160px 0;
+  margin: 25px 100px 100px 30px;
+}
+
+.form-header {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  color: rgb(85, 85, 85);
+}
+
+input {
+  margin-right: 80px;
+  width: 90%;
+}
+
+.firstname,
+.lastname,
+.email,
+.phonenum,
+.password,
+.confirmpass,
+.line1,
+.line2,
+.line3 {
+  float: left;
+  margin-right: 3em;
+}
+
+.top-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .top-right,
