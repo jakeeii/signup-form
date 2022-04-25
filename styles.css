@@ -4,11 +4,25 @@ body {
   margin: 0;
 }
 
-a {
-  color: white;
+
+a:hover {
+  cursor: pointer;
 }
 
 body {
+  display: flex;
+  font-family: 'Baloo Da 2', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.odin {
+  max-width: 90px;
+  margin-left: 40px;
+  margin-right: -40px;
+  height: auto;
+  float: left;
+}
+
+.logo {
   display: flex;
 }
 
@@ -23,13 +37,14 @@ body {
 }
 
 .logo-text,
-.bg-credit {
+.bg-credit,
+.bg-link {
   text-align: center;
   color: white;
 }
 
 .logo-text {
-  margin-top: 180px;
+  margin-top: 120px;
   padding: 30px 0;
   font-size: 40px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -45,7 +60,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
-  font-family: 'Baloo Da 2', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .description,
@@ -143,4 +157,26 @@ input:not(:placeholder-shown):valid {
 
 button {
   font-family: inherit;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgb(22, 59, 22);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+button,
+.registered {
+  margin-left: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(21, 84, 21);
+}
+
+.registered {
+  color: black;
 }
