@@ -57,11 +57,7 @@ body {
 }
 
 .description {
-  margin-top: 50px;
-}
-
-.cta {
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 form {
@@ -103,8 +99,13 @@ input {
   font-family: inherit;
 }
 
-input:not(:focus):invalid {
+input:not(:placeholder-shown):invalid {
   border: 1px solid red;
+}
+
+input:required:valid,
+input:not(:placeholder-shown):valid {
+  border: 1px solid green
 }
 
 .firstname,
@@ -128,7 +129,7 @@ input:not(:focus):invalid {
 
 .top-right,
 .bottom-right {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(249, 249, 249);
   flex-grow: 1;
 }
 
